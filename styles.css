@@ -1,0 +1,68 @@
+/* source: https://ethanschoonover.com/solarized/ */
+:root {
+    --base03:    #002b36;
+    --base02:    #073642;
+    --base01:    #586e75;
+    --base00:    #657b83;
+    --base0:     #839496;
+    --base1:     #93a1a1;
+    --base2:     #eee8d5;
+    --base3:     #fdf6e3;
+    --yellow:    #b58900;
+    --orange:    #cb4b16;
+    --red:       #dc322f;
+    --magenta:   #d33682;
+    --violet:    #6c71c4;
+    --blue:      #268bd2;
+    --cyan:      #2aa198;
+    --green:     #859900;
+}
+
+:root {
+    --background-color: var(--base3);
+    --color: var(--base00);
+    --accent: var(--base01);
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+    --background-color: var(--base03);
+    --color: var(--base0);
+    --accent: var(--base1);
+}
+}
+
+html {
+    background: var(--background-color);
+    color: var(--color);
+}
+
+h1 {
+  color: var(--blue);
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--green);
+}
+
+a {
+  color: var(--yellow);
+}
+a:visited, a:hover {
+  color: var(--orange);
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5%;
+  width: 100%;
+  max-width: 400px;
+}
+
