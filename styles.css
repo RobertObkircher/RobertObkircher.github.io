@@ -38,31 +38,72 @@ html {
 }
 
 h1 {
-  color: var(--blue);
+    color: var(--blue);
 }
 
 h2, h3, h4, h5, h6 {
-  color: var(--green);
+    color: var(--green);
 }
 
 a {
-  color: var(--yellow);
+    color: var(--yellow);
 }
+
 a:visited, a:hover {
-  color: var(--orange);
+    color: var(--orange);
+}
+
+a.current {
+    font-weight: bold;
 }
 
 .content {
-  max-width: 500px;
-  margin: auto;
+    max-width: 500px;
+    margin: auto;
 }
 
+.navbar a {
+    padding-right: 12px;
+}
+
+.avatar-and-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: medium;
+}
+
+.avatar {
+    margin: 0.5em;
+    flex: 0 0 33%;
+}
+
+.avatar a {
+    display: block;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.links {
+    flex: 1 0 220px;
+}
+
+.links li + li {
+    margin-top: 0.5em;
+}
+
+/*
 .center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 0.5%;
-  width: 100%;
-  max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 400px;
 }
-
+*/
