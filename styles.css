@@ -49,7 +49,7 @@ a {
     color: var(--yellow);
 }
 
-a:visited, a:hover {
+a:hover {
     color: var(--orange);
 }
 
@@ -98,13 +98,6 @@ a.current {
     margin-top: 0.5em;
 }
 
-/*
-.center-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
+.w100 {
     width: 100%;
-    max-width: 400px;
 }
-*/
