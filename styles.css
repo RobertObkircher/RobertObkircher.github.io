@@ -19,16 +19,14 @@
 }
 
 :root {
-    --background-color: var(--base3);
-    --color: var(--base00);
-    --accent: var(--base01);
+    --background-color: white;
+    --color: black;
 }
 
 @media (prefers-color-scheme: dark) {
 :root {
-    --background-color: var(--base03);
-    --color: var(--base0);
-    --accent: var(--base1);
+    --background-color: black;
+    --color: lightgray;
 }
 }
 
@@ -38,19 +36,25 @@ html {
 }
 
 h1 {
-    color: var(--blue);
+    color: green;
 }
 
 h2, h3, h4, h5, h6 {
     color: var(--green);
 }
 
-a {
-    color: var(--yellow);
+@media (prefers-color-scheme: dark) {
+a:link {
+  color: var(--blue);
 }
 
-a:hover {
-    color: var(--orange);
+a:visited {
+  color: var(--violet);
+}
+}
+
+a:hover, a:active {
+    color: var(--red);
 }
 
 a.current {
@@ -71,8 +75,10 @@ a.current {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    /*
     border-style: solid;
-    border-width: medium;
+    border-width: thin;
+    */
 }
 
 .avatar {
