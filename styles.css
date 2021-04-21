@@ -62,7 +62,7 @@ a.current {
 }
 
 .content {
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -83,7 +83,7 @@ a.current {
 
 .avatar {
     margin: 0.5em;
-    flex: 0 0 100px;
+    flex: 0 0 80px;
 }
 
 .avatar a {
@@ -97,7 +97,6 @@ a.current {
 
 .links {
     flex: 1 0 260px;
-    list-style-type: square;
 }
 
 .links li + li {
